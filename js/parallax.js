@@ -2,16 +2,16 @@ var A_ARAI = A_ARAI || {};
 A_ARAI.SAMPLE = {};
 
 
-A_ARAI.SAMPLE.PARALLAX = {
+A_ARAI.SAMPLE.Parallax = {
 
     init: function() {
         this.setParameters();
         this.bgController();
     },
-    setParameters : function(){
+    setParameters: function(){
         this.$targetSection = $('section');
     },
-    bgController : function(){
+    bgController: function(){
         var _self = this;
         this.$targetSection.each(function(){
                 var $this =  $(this),
@@ -33,5 +33,5 @@ A_ARAI.SAMPLE.PARALLAX = {
     }
 };
 $(function(){
-    A_ARAI.SAMPLE.PARALLAX.init();
+    A_ARAI.SAMPLE.Parallax.init();
 });
